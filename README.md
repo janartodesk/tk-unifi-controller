@@ -15,7 +15,7 @@ then continue with setting up Tanka [using the official documentation](https://t
 
 Point your environment to a correct Kubernetes config file
 ```
-$ export KUBECONFIG=~/.kube/microk8s.unify
+$ export KUBECONFIG=~/.kube/microk8s.unifi
 ```
 and configure away
 ```
