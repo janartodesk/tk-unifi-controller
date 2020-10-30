@@ -1,0 +1,8 @@
+apiVersion: v2
+name: unifi-controller
+description: |
+  A Helm chart for deploying Unifi Controller
+  using jacobalberty's awesome imagery.
+type: application
+version: 0.1.0
+appVersion: 6.0.28

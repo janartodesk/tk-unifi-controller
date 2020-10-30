@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "chart.fullname" . }}
+  labels: {{- include "chart.labels" . | nindent 4 }}
+spec:
+  ports:
+  - port: {{ .Values.controller.ports.stun }}
+    name: stun
+  - port: {{ .Values.controller.ports.speedTest }}
+    name: speedtest
+  - port: {{ .Values.controller.ports.device }}
+    name: device
+  - port: {{ .Values.controller.ports.https }}
+    name: https
+  - port: {{ .Values.controller.ports.httpPortal }}
+    name: http-portal
+  - port: {{ .Values.controller.ports.httpsPortal }}
+    name: https-portal
+  - port: {{ .Values.controller.ports.discovery }}
+    name: discovery
+  selector: {{- include "chart.selectorLabels" . | nindent 4 }}

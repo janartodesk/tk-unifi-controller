@@ -1,0 +1,9 @@
+controller:
+  ports:
+    stun: 3478
+    speedtest: 6789
+    device: 8080
+    https: 8443
+    httpPortal: 8880
+    httpsPortal: 8843
+    discovery: 10001
